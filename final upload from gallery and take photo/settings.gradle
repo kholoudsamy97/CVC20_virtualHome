@@ -1,0 +1,2 @@
+rootProject.name='upload photo and take photo with camera'
+include ':app'
