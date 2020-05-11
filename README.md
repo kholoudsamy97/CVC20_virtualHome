@@ -7,9 +7,3 @@ For the store’s owners : They can upload their furniture for customers to see 
 For Customers : To try and see if furniture fit their homes or not.
 
 Link of our proposal of this project for more details about it: https://drive.google.com/open?id=1Wmt8KC-5fSk0GALRmi9raPjgQdo9ei8z
-
- 
-
-
-
-
