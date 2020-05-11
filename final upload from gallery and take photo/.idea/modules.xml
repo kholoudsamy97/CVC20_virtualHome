@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="upload photo and take photo with camera/app" />
-      <module fileurl="file://$PROJECT_DIR$/upload photo and take photo with camera.iml" filepath="$PROJECT_DIR$/upload photo and take photo with camera.iml" group="upload photo and take photo with camera" />
-    </modules>
-  </component>
-</project>
