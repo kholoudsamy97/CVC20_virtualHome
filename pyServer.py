@@ -1,37 +1,33 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Aug 12 20:40:15 2018
-
-@author: Waseem Kntar
-@title: pyServer
-"""
 import socket
-#import threading
 
-host, port = "192.168.1.6", 1234
+# import threading
+
+host, = "192.168.1.6",
+port = 1234
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 
-def recv(): 
+def recv():
     try:
         client.bind((host, port))
     finally:
         pass
-    client.listen(10) # how many connections can it receive at one time
-    print "Start Listening..."
-    
+    client.listen(10)  # how many connections can it receive at one time
+    print("Start Listening...")
+
     while True:
         conn, addr = client.accept()
-        print "client with address: ", addr, " is connected."
+        print("client with address: ", addr, " is connected.")
         data = conn.recv(1024)
-        print "Recieved this data: <", data, "> from the client."
-        
-        if data == "Correct":
+        print(data)
+        data1 = conn.recv(1024)
+        print(data1)
+        if data == "Correct" or data1 == "Correct":
             reply = "Success"
             conn.send(reply.encode("utf-8"))
             conn.close()
-            print "-----------------------------"
-        elif data == "Disconnect":
+            print("-----------------------------")
+        elif data == "Disconnect" or data1 == "Disconnect":
             reply = "Disconnected and the listen has Stopped"
             conn.send(reply.encode("utf-8"))
             conn.close()
@@ -40,15 +36,12 @@ def recv():
             reply = "Failed"
             conn.send(reply.encode("utf-8"))
             conn.close()
-            print "-----------------------------"
-            
-    client.close()
-"""
-You can use thread for the recieve operation so that the execution in main thread
-isn't wait until complete the recieve operation. 
-"""
-#thread = threading.Thread(target = recvFromAndroid, args = ())
-#thread.start()
-recv()
-#print "completed"
+            print("-----------------------------")
 
+    client.close()
+
+
+# thread = threading.Thread(target = recvFromAndroid, args = ())
+# thread.start()
+recv()
+# print "completed"
