@@ -15,7 +15,9 @@ The seller enters the height and width of the item, then we resize the image of 
 Customer moves the resized item above the plan and try to fit it with his room.
 
 Link of our proposal of this project for more details about it: https://drive.google.com/open?id=1Wmt8KC-5fSk0GALRmi9raPjgQdo9ei8z
- 
+
+Link of our Demo Video for this application: https://www.youtube.com/watch?v=OLnmuJVj30o&t=3s
+
 Team members:
 
 Kholoud Hussien Samy
